@@ -189,7 +189,7 @@ button:focus-visible {
   }
 }
 
-/* custom stuff */
+/* custom colors */
 @theme {
   --color-bg-primary: #D8DBE2;
   --color-bg-secondary: #A9BCD0;
