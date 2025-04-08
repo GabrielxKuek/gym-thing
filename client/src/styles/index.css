@@ -188,3 +188,9 @@ button:focus-visible {
     @apply bg-background text-foreground;
   }
 }
+
+/* custom stuff */
+@theme {
+  --color-bg-primary: #D8DBE2;
+  --color-bg-secondary: #A9BCD0;
+}
