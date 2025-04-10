@@ -1,9 +1,9 @@
 /*//////////////
     Kodchasan 
-    - h1
-    
+    - h1, h2, h3, h4, h5, h6
+
     Inter
-    - p
+    - p, span, a, li, button, input, textarea
 /////////////////*/
 
 /* ///////////////
@@ -116,19 +116,26 @@
 /* ////////////
     rules 
 /////////////*/
-@theme {
-    --font-inter: 'Inter', sans-serif;
-    --font-kodchasan: 'Kodchasan', sans-serif;
-}
-
 :root {
     --font-sans: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     font-family: var(--font-kodchasan);
+    font-size: 30px;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: var(--font-kodchasan);
+    font-size: 25px;
 }
 
 p, span, a, li, button, input, textarea {
     font-family: var(--font-inter);
+    font-size: 20px;
+}
+
+@theme {
+    --font-inter: 'Inter', sans-serif;
+    --font-kodchasan: 'Kodchasan', sans-serif;
 }
