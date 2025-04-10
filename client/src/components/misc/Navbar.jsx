@@ -27,6 +27,7 @@ const Navbar = () => {
         <>
         <div className="py-10 px-15">
             <div className="content-between flex justify-between">
+                {/* left */}
                 <div className="content-start flex gap-20">
                     <h1
                         className="font-bold text-shadow text-shadow-lg/10 clickable flex items-center"
@@ -56,8 +57,9 @@ const Navbar = () => {
                     </ul>
 
                 </div>
-                {/* left */}
-
+                
+                {/* right */}
+                {/* future plans lol */}
             </div>
         </div>
         </>
