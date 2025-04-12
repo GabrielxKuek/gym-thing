@@ -1,5 +1,5 @@
 // dummy data for heatmap
-export function getUserExerciseProgress() {
+export async function getUserExerciseProgress() {
     return [
         {
             "date": "2025-03-31",
@@ -215,3 +215,22 @@ export function getUserExerciseProgress() {
         }
     ]
 }
+
+export function getStartEndHeatmapDates() {
+    let date = new Date();
+
+    // get start and end date of current month
+    const startDate = new Date(date.getFullYear(), date.getMonth(), 1)
+    const endDate = new Date(date.getFullYear, date.getMonth() + 1, 0)
+
+    // get number of days in month
+    const daysInMonth = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24)) + 1;
+
+    return {
+        "startDate": startDate,
+        "endDate": endDate,
+        "daysInMonth": daysInMonth
+    }
+}
+
+console.log(JSON.stringify(getStartEndHeatmapDates))
