@@ -23,12 +23,15 @@ const Heatmap = () => {
         return date.toISOString().slice(0, 10);
     })
 
+    // helper function
     const longestExerciseTime = exerciseData?.reduce((a, b) => Math.max(a, b.time), -Infinity);
     
+    // calculate intensity based on other exercise timing
     const getIntensity = (exerciseTime) => {
         return longestExerciseTime !== 0 ? Number(exerciseTime / longestExerciseTime) : 0;
     }
 
+    // assign color code based on intensity
     const getColorFromIntensity = (intensity) => {
         const colorCodes = ["bg-heatmap-intensity-100", "bg-heatmap-intensity-200", "bg-heatmap-intensity-300", "bg-heatmap-intensity-400", "bg-heatmap-intensity-500"];
         const colorIndex = Math.min(Math.floor(intensity * colorCodes.length), colorCodes.length - 1);
