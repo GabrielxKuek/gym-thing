@@ -194,3 +194,12 @@ button:focus-visible {
   --color-bg-primary: #D8DBE2;
   --color-bg-secondary: #A9BCD0;
 }
+
+/* heatmap colors */
+@theme {
+  --color-heatmap-intensity-100: #D8DBE2;
+  --color-heatmap-intensity-200: #D1C6CA;
+  --color-heatmap-intensity-300: #CAB7B2;
+  --color-heatmap-intensity-400: #D3AEA5;
+  --color-heatmap-intensity-500: #DAA49A;
+}
