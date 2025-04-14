@@ -3,11 +3,9 @@ import HeatmapCalendar from "./HeatmapCalendar";
 
 const ProgressCard = () => {
     return (
-        <>
-        <ContentCard title="Progress" direction="row">
+        <ContentCard title="Progress" direction="row" width="50">
             <HeatmapCalendar />
         </ContentCard>
-        </>
     )
 }
 

@@ -2,10 +2,14 @@ import PropTypes from "prop-types";
 
 import ComponentBackground from "./ComponentBackground";
 
-const ContentCard = ({ title, direction, children }) => {
+const ContentCard = ({ title, direction, width, children }) => {
+    // get width of ContentCard component
+
     return (
         // parent div
-        <div className="">
+        <div 
+            style={{ width: `${width}%` }}
+        >
             {/* header */}
             <div className="flex justify-between items-center mb-5">
                 <h1 className="font-semibold">{title}</h1>
@@ -26,6 +30,7 @@ const ContentCard = ({ title, direction, children }) => {
 ContentCard.propTypes = {
     title: PropTypes.string.isRequired,
     direction: PropTypes.string.isRequired,
+    width: PropTypes.string.isRequired,
     children: PropTypes.node.isRequired,
 }
 
