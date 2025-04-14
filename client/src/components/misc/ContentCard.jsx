@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 import ComponentBackground from "./ComponentBackground";
 
-const ContentCard = ({ title, children }) => {
+const ContentCard = ({ title, direction, children }) => {
     return (
         // parent div
         <div className="">
@@ -16,7 +16,7 @@ const ContentCard = ({ title, children }) => {
             </div>
 
             {/* content */}
-            <ComponentBackground>
+            <ComponentBackground direction={direction}>
                 { children }
             </ComponentBackground>
         </div>
@@ -25,6 +25,7 @@ const ContentCard = ({ title, children }) => {
 
 ContentCard.propTypes = {
     title: PropTypes.string.isRequired,
+    direction: PropTypes.string.isRequired,
     children: PropTypes.node.isRequired,
 }
 
