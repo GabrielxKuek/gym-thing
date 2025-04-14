@@ -4,7 +4,7 @@ import Comment from "./Comment";
 const RecentCommentsCard = () => {
     return (
         <>
-            <ContentCard title="Recent Comments">
+            <ContentCard title="Recent Comments" direction="col">
                 <Comment></Comment>
                 <Comment></Comment>
             </ContentCard>
