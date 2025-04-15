@@ -193,6 +193,9 @@ button:focus-visible {
 @theme {
   --color-bg-primary: #D8DBE2;
   --color-bg-secondary: #A9BCD0;
+  --color-primary: #58A4B0;
+  --color-secondary: #373F51;
+  --color-tertiary: #DAA49A;
 }
 
 /* heatmap colors */
